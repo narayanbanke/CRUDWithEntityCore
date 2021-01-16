@@ -38,12 +38,12 @@
         <td>@p.TeamSize</td>
         <td>@string.Format(new System.Globalization.CultureInfo("en-US"), "{0:C2}", p.Salary)</td>
         <td>@string.Format("{0:dddd, dd MMMM yyyy}", p.AddedOn)</td>
-        <td><a asp-action="Update" asp-route-id="@p.Id">Update</a></td>
+        <td><a asp-action="Update" class="btn btn-sm btn-secondary" asp-route-id="@p.Id">Update</a></td>
       
         <td>
             <form asp-action="Delete" method="post" asp-route-id="@p.Id">
-                @*<button>Delete</button>*@
-                <a  class="btn btn-sm btn-secondary">Delete</a>
+                <button  class="btn btn-sm btn-secondary">Delete</button>
+                @*<a >Delete</a>*@
 
             </form>
         </td>
