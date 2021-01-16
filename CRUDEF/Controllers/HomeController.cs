@@ -10,9 +10,9 @@ namespace CRUDEF.Controllers
     public class HomeController : Controller
     {
         private EmployeeContext employeeContext ;
-        public HomeController(EmployeeContext sc)
+        public HomeController(EmployeeContext insEmployeeContext)
         {
-            employeeContext = sc;
+            employeeContext = insEmployeeContext;
         }
 
         public IActionResult Index()
